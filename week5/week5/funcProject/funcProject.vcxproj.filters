@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="oddEven.c">
+    <ClCompile Include="func.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
