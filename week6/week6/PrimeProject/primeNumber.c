@@ -8,7 +8,7 @@
 int isPrimeNumber(int n);
 int main(int argc, char* argv[]) {
 	int inputNumber = 0;
-	int c = 0;
+	int c = 0; //1이면 소수 이상이면 소수x
 	int i;
 	printf("출력 최대값 : ");
 	scanf_s("%d", &inputNumber);
@@ -24,14 +24,14 @@ int main(int argc, char* argv[]) {
 			printf("%d    ",i);	
 	*/
 
-		if (isPrimeNumber(i) == 1)
+		if (isPrimeNumber(i) == 1)//return 소수(1)이면
 			printf("%d    ", i);
 
 	
 
 	return 0;
 }
-int isPrimeNumber(int n) {
+int isPrimeNumber(int n) { //소수면 1 소수가 아니면 0 리턴
 	int i;
 	int c = 0;
 	for (i = 1; i < n; i++)

@@ -8,8 +8,8 @@ do~while 사용하여 입력의 합과 평균 구하기
 double average(int total, int count);
 int main(int argc, char * argv[]) {
 	int inputN = 0;
-	int total = 0;
-	double avg = 0.0;
+	int total = 0; //합
+	double avg = 0.0;//평균
 	int count = 0;
 	do {
 		printf("정수입력 : ");

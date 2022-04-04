@@ -6,8 +6,8 @@
 #include <stdio.h>
 
 int main(int argc, char * argv[]) {
-	int n = 0;
-	long long factorialvalue = 1L;
+	int n = 0; 
+	long long factorialvalue = 1L;//팩토리얼 총 합
 	
 	printf("펙토리얼 n값을 입력하시오 : ");
 	scanf_s("%d", &n);

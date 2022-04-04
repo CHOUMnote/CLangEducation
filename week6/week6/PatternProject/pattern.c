@@ -28,38 +28,38 @@ int main(int argc, char* argv[]) {
 	printInvertedTriangle(height);
 	return 0;
 } 
-void printRect(int height, int width) {
+void printRect(int height, int width) {//사각형 
 	int i, j;
-	for (i = 0; i < height; i++) {
+	for (i = 0; i < height; i++) { //height x width
 		for (j = 0; j < width; j++)
 			printf("*");
 		printf("\n");
 	}
 }
-void  printRightAngledTriangle(int height) {
+void  printRightAngledTriangle(int height) {//직각삼각형
 	int i, j;
-	for (i = 0; i < height; i++) {
-		for (j = 0; j <= i; j++)
+	for (i = 0; i < height; i++) { 
+		for (j = 0; j <= i; j++)	//1개 2개 3개...i개 까지
 			printf("*");
 		printf("\n");
 	}
 }
-void printIsoscelesTriangle(int height) {
+void printIsoscelesTriangle(int height) {//이등변삼각형
 	int i, j;
 	for (i = 0; i < height; i++) {
-		for (j = 0; j < height-i-1 ; j++)
+		for (j = 0; j < height-i-1 ; j++)//" "출력
 			printf(" ");
-		for (j = 0; j < i*2+1 ; j++)
-			printf("*");
+		for (j = 1; j < i*2+2 ; j++)//1,3,5,7...i*2+1개 출력
+			printf("%d",j);
 		printf("\n");
 	}
 }
-void printInvertedTriangle(int height) {
+void printInvertedTriangle(int height) { //역삼각형
 	int i, j;
 	for (i = 0; i < height; i++) {
-		for (j = 0; j < i; j++)
+		for (j = 0; j < i; j++)//" " 0개 1개 2개 ... i개 출력
 			printf(" ");
-		for (j = height; j > i*2 - 3; j--)
+		for (j = height; j > i*2 - 3; j--)//...,7,5,3,1개 출력 
 			printf("*");
 		printf("\n");
 	}

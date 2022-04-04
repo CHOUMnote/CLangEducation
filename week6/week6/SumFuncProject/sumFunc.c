@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
 
 	return 0;
 }
-int calc(int number) {
+int calc(int number) { //결과 리턴
 	int result = 0;
 	for (int i = 1; i <= number; i++)
 		result += (i * i + 1);

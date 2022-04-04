@@ -25,17 +25,17 @@ int main(int argc, char* argv[]) {
 int sum(int end, int mode) {
 	int total = 0;
 	int i;
-	if (mode == 2) {
+	if (mode == 2) { //Â¦¼ö ÀÏ¶§
 		for (i = 1; i <= end; i++)
 			if (i % 2 == 0)
 				total += i;
 	}
-	else if (mode == 1) {
+	else if (mode == 1) { //È¦¼ö ÀÏ¶§
 		for (i = 1; i <= end; i++)
 			if (i % 2 != 0)
 				total += i;
 	}
-	else {
+	else { //ÃÑ ÇÕ
 		for (i = 1; i <= end; i++)
 			total += i;
 	}

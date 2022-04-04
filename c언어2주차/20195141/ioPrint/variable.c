@@ -15,7 +15,7 @@ int main() {
 
 	printf("age = %d\n",age);
 	printf("salary = %u\n",salary);
-	printf("pi = %f\n",pi);
+	printf("pi = %.2f\n",pi);
 	printf("grade = %d\n",grade);
 	printf("credit = %c\n",credit);
 

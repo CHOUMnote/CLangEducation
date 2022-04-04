@@ -6,12 +6,12 @@
 #include <stdio.h>
 
 int main(int argc, char* argv[]) {
-	int first = 0;
-	int second = 1;
-	int next = 0;
+	int first = 0; //n-2번째
+	int second = 1;	//n-1번재
+	int next = 0;	//현재 값
 	int i = 0;
 	int last = 0;
-	int sum = 1;
+	int sum = 1;	//수열의 총 합
 	printf("피보나치 수열의 마지막 항을 입력하세요 : ");
 	scanf_s("%d", &last);
 
@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
 		printf("피보나치 수열 %d", 1);
 		printf("\n수열 합계 : %d", 1);
 	}
-	else {
+	else { //2 이상일때
 		printf("피보나치 수열 %d, %d, ", 0, 1);
 		for (i = 2; i < last; i++) {
 			next = first + second;
