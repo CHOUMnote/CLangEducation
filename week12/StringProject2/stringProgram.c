@@ -16,7 +16,7 @@ int main(int argc, char* argv[]) {
 	char inputString[20];
 
 	printf("문자열 입력 : ");
-	gets_s(inputString);	//공백 포함 한줄의 값을 입력받음
+	gets_s(inputString,20);	//공백 포함 한줄의 값을 입력받음
 	printf("입력 문자열 : %s\n", inputString);
 
 	toUpperLower(inputString);	//대문자->소문자, 소문자->대문자
