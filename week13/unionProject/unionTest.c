@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
 	// 더 이상 data.num에 해당하는 값은 사용할 수 없다.
 	printf("Ch[0] : %c\n", data.chAry[0]);
 	printf("Ch[1] : %c\n", data.chAry[1]);
-	// printf ("short: %hd\n" , data.num);  // 결과를 확인해 보세요.
+	//printf ("short: %hd\n" , data.num);  // 결과를 확인해 보세요.
 	//위 테스트 문구는 변조된 값이 나온다 -> 공용체 필드 chAry에 메모리를 할당함에 따라 num의 값은 더 이상 원래 초기화된 값을 잃어 버렸기 때문
 
 	return 0;
